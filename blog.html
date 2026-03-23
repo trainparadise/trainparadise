@@ -47,5 +47,11 @@
             <button type="button">会員登録</button>
             <button type="button">ログイン</button>
         </div>
+        <p class="subtitle">ブログ一覧</h1>
+        <ul>
+            {% for post in site.posts %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
     </body>
 </html>
