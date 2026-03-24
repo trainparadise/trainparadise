@@ -1,1 +1,22 @@
+---
+layout: null
+---
 
+<!doctype html>
+<html>
+    <head>
+        <title>{{ page.title }}</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/trainparadise/style.css">
+    </head>
+
+    <body>
+        {% include nav.html %}
+        
+        <main>
+            {{ content }}
+        </main>
+        
+        {% include footer.html %}
+    </body>
+</html>
