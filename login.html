@@ -1,4 +1,62 @@
-<script type="module">
+<!doctype html>
+<html>
+    <head>
+        <title>鉄道の楽園</title>
+        <meta name="google-site-verification" content="rAYISQcH1bzSQPNmiCtOwtCLzS3yAo7V0TTpKUAZxRA" />
+        <meta charset="UTF-8">
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+
+            .titlearea {
+                display: flex;
+                height: 72px;
+                align-items: flex-end;
+                gap: 12px;
+            }
+
+            .menu {
+                background: transparent;
+                color: #0088ff;
+                border: 2px solid #0088ff;
+                font-size: 16px;
+                border-radius: 8px;
+                text-decoration: none;
+                width: 96px;
+                height: 30px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .title {
+                font-size: 36px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+                padding: 4px 6px;
+                border-left: 4px solid #00dba0;
+                background-color: #f2f2f2;
+                color: #333;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="titlearea">
+            <p class="title">鉄道の楽園</p>
+            <a class="menu" href="blog">Blog</a>
+            <a class="menu">会員登録</a>
+            <a class="menu">ログイン</a>
+        </div>
+        
+        <p class="subtitle">ログイン</p>
+        <p>作成中です、完成までおまちください</p>
+
+        
+        <script type="module">
             // Import the functions you need from the SDKs you need
             import { initializeApp } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js";
             // TODO: Add SDKs for Firebase products that you want to use
@@ -17,3 +75,5 @@
             // Initialize Firebase
             const app = initializeApp(firebaseConfig);
         </script>
+    </body>
+</html>
