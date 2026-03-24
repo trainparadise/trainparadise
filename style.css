@@ -5,7 +5,7 @@ body {
 .titlearea {
     display: flex;
     height: 72px;
-    align-items: flex-end;
+    align-items: center;
     gap: 12px;
 }
 
@@ -18,7 +18,7 @@ body {
     text-decoration: none;
     width: 96px;
     height: 30px;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
