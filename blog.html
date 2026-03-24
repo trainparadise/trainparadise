@@ -1,27 +1,19 @@
 ---
 layout: default
+title: 鉄道の楽園 Blog
 ---
 
-<!doctype html>
-<html>
-    <head>
-        <title>鉄道の楽園 Blog</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="/trainparadise/style.css">
-    </head>
+<div class="titlearea">
+    <p class="title">鉄道の楽園 Blog</p>
+    <a class="menu" href="../">ホーム</a>
+    <a class="menu" href="../signup">会員登録</a>
+    <a class="menu" href="../login">ログイン</a>
+</div>
+<p class="subtitle">ブログ一覧</p>
+<ul>
+    {% for post in site.posts %}
+    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
+    
 
-    <body>
-        <div class="titlearea">
-            <p class="title">鉄道の楽園 Blog</p>
-            <a class="menu" href="../">ホーム</a>
-            <a class="menu" href="../signup">会員登録</a>
-            <a class="menu" href="../login">ログイン</a>
-        </div>
-        <p class="subtitle">ブログ一覧</p>
-        <ul>
-            {% for post in site.posts %}
-            <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
-        </ul>
-    </body>
-</html>
