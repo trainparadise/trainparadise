@@ -2,11 +2,15 @@ body {
     font-family: sans-serif;
 }
 
-.titlearea {
-    display: flex;
-    height: 72px;
-    align-items: center;
-    gap: 12px;
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+}
+
+.menuarea {
+  display: flex;
+  gap: 10px;
 }
 
 .menu {
