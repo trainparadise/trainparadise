@@ -75,15 +75,16 @@ body {
     display: block;
 }
 
+.title {
+    font-size: 36px;
+    left: 70px !important;
+}
+
+
 
 /*までnavファイル内*/
 
 
-
-.title {
-    font-size: 36px;
-    left: 70px;
-}
 
 .subtitle {
     font-size: 18px;
