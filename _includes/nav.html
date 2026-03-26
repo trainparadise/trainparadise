@@ -1,37 +1,13 @@
-<nav>
-    <button id="hamburger">≡</button>
-    <p class="title">鉄道の楽園</p>
-</nav>
-
-<div id="overlay"></div>
-<div class="sidemenu">
-    <button id="close">×</button>
+<nav class="menu">
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
     <a class="menu" href="{{ site.baseurl }}">ホーム</a>
     <a class="menu" href="{{ site.baseurl }}/blog">ブログ</a>
     <a class="menu" href="{{ site.baseurl }}/login">ログイン</a>
-</div>
+</nav>
 
-
-<script>
-    const hamburger = document.getElementById("hamburger");
-    const sidemenu = document.getElementById("sidemenu");
-    const close = document.getElementById("close");
-    const overlay = document.getElementById("overlay");
-    
-    hamburger.addEventListener("click", () => {
-        sidemenu.style.left = "0";
-        overlay.style.visibility = "visible";
-        overlay.style.opacity = "1";
-    });
-    
-    function closeMenu() {
-        sideMenu.style.left = "-250px";
-        overlay.style.opacity = "0";
-        setTimeout(() => {
-            overlay.style.visibility = "hidden";
-        }, 300);
-    }
-    
-    closeBtn.addEventListener("click", closeMenu);
-    overlay.addEventListener("click", closeMenu);
-</script>
+<p class="title">鉄道の楽園</p>
