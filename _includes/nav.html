@@ -13,7 +13,25 @@
 
 
 <script>
-    function toggleMenu(){
-        document.getElementById(".menuarea").classList.toggle("show");
+    const hamburger = document.getElementById("hamburger");
+    const sidemenu = document.getElementById("sidemenu");
+    const close = document.getElementById("close");
+    const overlay = document.getElementById("overlay");
+    
+    hamburger.addEventListener("click", () => {
+        sidemenu.style.left = "0";
+        overlay.style.visibility = "visible";
+        overlay.style.opacity = "1";
+    });
+    
+    function closeMenu() {
+        sideMenu.style.left = "-250px";
+        overlay.style.opacity = "0";
+        setTimeout(() => {
+            overlay.style.visibility = "hidden";
+        }, 300);
     }
+    
+    closeBtn.addEventListener("click", closeMenu);
+    overlay.addEventListener("click", closeMenu);
 </script>
