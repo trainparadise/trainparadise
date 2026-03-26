@@ -1,16 +1,16 @@
 <nav>
-    <div class="hamburger" onclick="toggleMenu()">
-        ☰
-    </div>
-    
-    <div class="menuarea">
-        <a class="menu" href="{{ site.baseurl }}">ホーム</a>
-        <a class="menu" href="{{ site.baseurl }}/blog">ブログ</a>
-        <a class="menu" href="{{ site.baseurl }}/login">ログイン</a>
-        
-        <p class="title">鉄道の楽園</p>
-    </div>
+    <button id="hamburger">≡</button>button>
+    <p class="title">鉄道の楽園</p>
 </nav>
+
+<div id="overlay"></div>
+<div class="sidemenu">
+    <button id="close">×</button>
+    <a class="menu" href="{{ site.baseurl }}">ホーム</a>
+    <a class="menu" href="{{ site.baseurl }}/blog">ブログ</a>
+    <a class="menu" href="{{ site.baseurl }}/login">ログイン</a>
+</div>
+
 
 <script>
     function toggleMenu(){
