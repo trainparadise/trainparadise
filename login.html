@@ -70,6 +70,11 @@ title: 鉄道の楽園
         const username = document.getElementById("signupusername").value;
         const email = document.getElementById("signupemail").value;
         const password = document.getElementById("signuppassword").value;
+
+        if (!username) {
+            alert("ユーザー名を入力してください");
+            return;
+        }
         
         auth.createUserWithEmailAndPassword(email, password)
             .then((userCredential) => {
