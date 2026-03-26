@@ -7,7 +7,7 @@ title: 鉄道の楽園
 <p>作成中です</p>
 
 <p class="subtitle">会員登録</p>
-<p>まだ動作の確認をしていません</p>
+<p>まだ動作の確認をしていません。使用しないでください。</p>
 
 <input type="email" id="email" placeholder="メールアドレス">
 <input type="password" id="password" placeholder="パスワード">
@@ -25,4 +25,21 @@ title: 鉄道の楽園
         messagingSenderId: "940085797559",
         appId: "1:940085797559:web:d704214d11b8420342a332"
     };
+
+    firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+
+  // 🔥 新規登録
+  function register() {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    auth.createUserWithEmailAndPassword(email, password)
+      .then(() => {
+        alert("登録成功！");
+      })
+      .catch(error => {
+        alert(error.message);
+      });
+  }
 </script>
