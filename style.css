@@ -8,11 +8,13 @@ body {
 .title {
     font-size: 36px;
     text-decoration: none;
+    color: #000000;
 }
 
 .link {
     font-size: 24px;
     text-decoration: none;
+    color: #000000;
 }
 
 /*までnavファイル内*/
