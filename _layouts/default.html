@@ -17,5 +17,16 @@ layout: null
         <main>
             {{ content }}
         </main>
+
+        <script>
+            auth.onAuthStateChanged((user) => {
+                if (user) {
+                    document.getElementById("status").textContent =
+                        "ログイン中: " + user.email;
+                } else {
+                    document.getElementById("status").textContent = "未ログイン";
+                }
+            });
+        </script>
     </body>
 </html>
