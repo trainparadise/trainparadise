@@ -81,6 +81,7 @@ title: 鉄道の楽園
                 return db.collection("users").doc(user.uid).set({
                     username: username,
                     email: email,
+                    coins: 0,
                     createdAt: new Date()
                 });
             })
