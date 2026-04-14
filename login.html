@@ -56,8 +56,13 @@ title: 鉄道の楽園
                 alert("ログインが成功しました");
             })
             .catch(error => {
-                alert(error.message);
-            });
+    const el = document.getElementById("status");
+    if (el) {
+        el.textContent = "エラー: " + error.message;
+    } else {
+        alert(error.message);
+    }
+});
     }
     
     function signup() {
