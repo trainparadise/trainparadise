@@ -23,17 +23,13 @@ layout: null
         <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
 
         <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                auth.onAuthStateChanged((user) => {
-                    const statusEl = document.getElementById("status");
-                    if (!statusEl) return;
-                    
-                    if (user) {
-                        statusEl.textContent = "ログイン中: " + user.email;
-                    } else {
-                        statusEl.textContent = "未ログイン";
-                    }
-                })
+            auth.onAuthStateChanged((user) => {
+                const el = document.getElementById("status");
+
+                if (!el) return;
+                el.textContent = user
+                    ? "ログイン中: " + user.email
+                    : "未ログイン";
             });
         </script>
     </body>
