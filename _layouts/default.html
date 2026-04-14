@@ -19,13 +19,17 @@ layout: null
         </main>
 
         <script>
-            auth.onAuthStateChanged((user) => {
-                if (user) {
-                    document.getElementById("status").textContent =
-                        "ログイン中: " + user.email;
-                } else {
-                    document.getElementById("status").textContent = "未ログイン";
-                }
+            document.addEventListener("DOMContentLoaded", () => {
+                auth.onAuthStateChanged((user) => {
+                    const statusEl = document.getElementById("status");
+                    if (!statusEl) return;
+                    
+                    if (user) {
+                        statusEl.textContent = "ログイン中: " + user.email;
+                    } else {
+                        statusEl.textContent = "未ログイン";
+                    }
+                })
             });
         </script>
     </body>
