@@ -23,6 +23,7 @@ title: 鉄道の楽園
 
 <script>
     const auth = window.auth;
+    const db = firebase.firestore();
     function showLogin() {
         document.getElementById("loginForm").style.display = "block";
         document.getElementById("signupForm").style.display = "none";
