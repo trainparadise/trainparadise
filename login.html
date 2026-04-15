@@ -35,19 +35,6 @@ title: 鉄道の楽園
 </script>
 
 <script>
-    const firebaseConfig = {
-        apiKey: "AIzaSyA2uk7D79EDeX8OKfW1yxlwY4nEnaN3ZNE",
-        authDomain: "trainparadise-c95a6.firebaseapp.com",
-        projectId: "trainparadise-c95a6",
-        storageBucket: "trainparadise-c95a6.firebasestorage.app",
-        messagingSenderId: "940085797559",
-        appId: "1:940085797559:web:d704214d11b8420342a332"
-    };
-
-    firebase.initializeApp(firebaseConfig);
-    const auth = firebase.auth();
-    const db = firebase.firestore();
-
     function login() {
         const email = document.getElementById("loginemail").value;
         const password = document.getElementById("loginpassword").value;
