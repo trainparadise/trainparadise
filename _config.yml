@@ -1,6 +1,7 @@
 title: 鉄道の楽園
 
-baseurl: https://trainparadise.pages.dev
+baseurl: 
+url: https://trainparadise.pages.dev
 
 theme: minima
 permalink: /blog/:title/
